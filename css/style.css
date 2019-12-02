@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    font-family: sans-serif;
+    color: white;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #182026;
+    overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
+}
+/*..........Calculator Wrapper..........*/
+.cal_wrapper{
+    width: 100%;
+    /* border: solid red; */
+}
+.cal_wrapper .h1_title{
+    text-align: center;
+    font-size: 2.2rem;
+}
+.top_input_field{
+    text-align: center;
+}
+.col_2_wrapper{
+    /* border: solid blue; */
+    display: flex;
+    justify-content: center;
+}
+.col_2_wrapper .col_2{
+    flex-basis: 320px;
+}
+@media screen and (max-width: 600px) {
+    .col_2_wrapper{
+        flex-flow: row wrap;
+    }
+    .col_2_wrapper .col_2{
+        margin-right: 0px!important;
+    }
+}
+.col_2_wrapper .col_2:not(:last-child){
+    margin-right: 20px
+}
+/*.............Input Field..........*/
+.input_field{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+    align-items: center;
+}
+.input_width input{
+    width: 170px;
+}
+.radio_field{
+    justify-content: center;
+}
+.input_field input{
+    padding: 12px 5px;
+    display: inline-block;
+    background: transparent;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255,.4);
+    color: white;
+    font-size: 16px;
+    border-radius: 2px;
+}
+.input_field label{
+    flex: 40%;
+    text-align: right;
+    padding-right: 12px;
+
+}
+
+.rsn_field{
+    justify-content: center;
+    flex-flow: row wrap;
+}
+.rsn_field input{
+    border: 1px solid rgba(255, 255, 255,.2);
+
+}
+.btn_price{
+    display: inline-block;
+    padding: 12px 30px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 1px 1px rgb(56, 84, 179);
+    border-radius: 2px;
+    margin: 10px 8px;
+    background: #2A4247;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn_price.calbtn{
+    display: block;
+    width: 180px;
+    margin: auto;
+}
+.price_h{
+    text-align: center;
+}
+/*...........radio custom button...........*/
+.radio_field input{
+    position: relative;
+    
+}
+
+.radio_field input::before,
+.radio_field input::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(255, 255, 255,.4);
+    top: -5px;
+    left: -7px;
+    cursor: pointer;
+    background: rgb(37, 46, 53);
+}
+.radio_field input::after{
+    border: solid white;
+    border-width: 0px 3px 3px 0px;
+    width: 8px;
+    height: 13px;
+    transform: rotate(35deg);
+    left: -1px;
+    top: -4px;
+    opacity: 0;
+    transition: .1s;
+}
+.radio_field input:checked::after{
+    opacity: 1;
+}
+/*...........contact info style...........*/
+
+.nl_contact{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 220px;
+    padding: 15px;
+    border: solid;
+    color: white;
+    background: rgba(0, 0, 255,.6);
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 0px 0px 50px 2px black;
+    user-select: none;
+}
+.nl_contact ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="cal_wrapper">
+        <h1 class="h1_title">Inferno Price Calculator</h1>
+        <!-----------Form------------>
+        <form action="" >
+            <div class="top_input_field input_field input_width  rsn_field">
+                <span style="margin-right: 10px;">RSN:</span>
+                <input  type="number">
+                <button class="btn_price" onclick="return rsnBtn()">Fetch Stats</button>
+            </div>
+            <div class="col_2_wrapper">
+                <div class="col_2">
+                    <div class="input_field input_width "><label for="">Ranged:</label><input value="99"  type="number" name="inputValue"
+                            id=""></div>
+                    <div class="input_field input_width "><label for="">Defence:</label><input value="99"  type="number" name="inputValue"
+                            id=""></div>
+                    <div class="input_field input_width "><label for="">Hitpoints:</label><input value="99"  type="number" name="inputValue"
+                            id=""></div>
+                    <div class="input_field input_width "><label for="">Promo</label><input placeholder="XYZ20" type="text" name="" id="">
+                    </div>
+                </div>
+                <div class="col_2">
+                    <div class="input_field input_width "><label for="">Magic:</label><input value="99"  type="number" name="inputValue"
+                            id=""></div>
+                    <div class="input_field input_width "><label for="">Prayer:</label><input value="99"  type="number" name="inputValue"
+                            id=""></div>
+                    <div class="input_field input_width "><label for="">Weapon:</label><input value="Twisted Bow" type="text" name=""
+                            id=""></div>
+                    <div class="input_field   radio_field">
+                        <span class="wrapper">
+                            <input type="radio" name="radio" id="radio1"> <label for="radio1">Rigour</label>
+                        </span>
+                        <span class="wrapper">
+                            <input type="radio" name="radio" id="radio2"> <label for="radio2">SGS</label>
+                        </span>
+                    </div>
+                    <button class="btn_price calbtn" onclick="return calbtnPrice()">Calculator Price</button>
+                </div>
+            </div>
+            <div class="price_input">
+                <h2 class="price_h">Estimated price : 240.5M - 290.5M (<span class="resultShow">100M+</span> for NA orders)</h2>
+            </div>
+        </form>
+
+    </div>
+    <!----------contact info----------->
+    <div class="nl_contact">
+        <ul>
+            <li></li>
+            <li><strong>02 Days, Target 30 Days</strong></li>
+        </ul>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
